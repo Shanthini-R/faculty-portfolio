@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Portfolio</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Create Your Portfolio</h1>
+        <form id="portfolioForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="experience">Work/Teaching Experience:</label>
+            <input type="text" id="experience" name="experience" required>
+
+            <label for="specialization">Specialization in Teaching:</label>
+            <input type="text" id="specialization" name="specialization" required>
+
+            <label for="image">Image URL:</label>
+            <input type="file" id="image" name="image" accept="image/*" required>
+
+            <label for="achievements">Achievements:</label>
+            <textarea id="achievements" name="achievements" required></textarea>
+
+            <label for="articles">Published Articles:</label>
+            <input type="url" id="articles" name="articles">
+
+            <label for="books">Books:</label>
+            <input type="text" id="books" name="books">
+
+            <label for="certificates">Certificates (Image URL, Link, Title):</label>
+            <input type="text" id="certificates" name="certificates">
+
+            <label for="contact">Contact Details:</label>
+            <input type="text" id="contact" name="contact" required>
+
+            <label for="linkedin">LinkedIn URL:</label>
+            <input type="url" id="linkedin" name="linkedin">
+
+            <label for="github">GitHub URL:</label>
+            <input type="url" id="github" name="github">
+
+            <label for="youtube">YouTube URL:</label>
+            <input type="url" id="youtube" name="youtube">
+
+            <label for="resume">Resume Link:</label>
+            <input type="url" id="resume" name="resume">
+
+            <label for="publications">Paper Publications:</label>
+            <input type="file" id="publications" name="publications" accept=".pdf,.doc,.docx" required>
+
+            <button type="submit">Generate Portfolio</button>
+        </form>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.3.1/jspdf.umd.min.js"></script>
+    <script src="./JS/script.js"></script>
+</body>
+</html>
